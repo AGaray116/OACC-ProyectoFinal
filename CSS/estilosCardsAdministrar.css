@@ -1,0 +1,198 @@
+.main .cards-admin .contenido{
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+}
+
+.main  .busqueda{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main .cards-admin .doctor,
+.main .cards-admin .secretaria{
+    margin-top: 40px;
+    border: 7px #000 solid;
+    border-style: double;
+    border-radius: 10px;
+    
+}
+
+.main .contenido img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.main .cards-admin .doctor,
+.main .cards-admin .secretaria{
+    text-align: center;
+}
+
+.main .cards-admin .doctor .cont,
+.main .cards-admin .secretaria .cont{
+    padding: 10px;
+    margin: 10px;
+    /* border: 1px #000 solid; */
+    /* IMPORTANTE */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main .cards-admin .doctor .cont .info,
+.main .cards-admin .secretaria .cont .info{
+    padding: 5px;
+}
+
+.main .cards-admin .doctor .btns,
+.main .cards-admin .secretaria .btns{
+    width: 350px;
+    float: right;
+}
+
+.main .cards-admin{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}   
+
+.main .card{
+    width: 70%;
+    height: 100px;
+    margin:0px auto;
+    padding-top: 20px;
+    
+    
+}
+
+.main .card .card-general{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border: #000 double 5px;
+    border-radius: 20px;
+  }
+.main .card .card-general .imagen{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.main .card .card-general p{
+    padding-top: 15px ;
+    font-size:large
+    
+}
+
+.doctor,
+.secretaria{
+    background-color: aliceblue;
+    display: flex;
+}
+
+
+
+
+.main .input {
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    font-size: 2rem;
+    color: #60C185;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.main .input:placeholder {
+    color: #60C185;
+    /**/
+}
+
+
+.main .input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+.main .contrasena{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .contrasena .buttonCambio{
+    color: #60C185;
+    background: transparent;
+    border: 2px solid #60C185;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main .contrasena .buttonCambio{
+    background-color: white;
+    color: black;
+    border: 2px solid #60C185;
+}
+
+
+.main .contrasena .buttonCambio:hover{
+    background-color: #60C185;
+    color: white;
+}
+
+/*Input doctor*/
+
+.nombreDoctor {
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    font-size: 2rem;
+    color: #60C185;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.nombreDoctor:placeholder {
+    color: #60C185;
+    /**/
+}
+
+
+ .nombreDoctor:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+
+.tamanoDoc{
+    width: 1000px;
+    height: 310px;
+}
+
+.tamanoSecre{
+    width: 1000px;
+    height: 310px;
+}
+
+.tamanoConsul{
+    width: 600px;
+    height: 200px;
+}
