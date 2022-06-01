@@ -1,15 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['rol'])) {
-    if ($_SESSION['rol'] == 1 || $_SESSION['rol'] == 3 || $_SESSION['rol'] == 4) {
-        echo '<script> alert("No tiene permiso para usar esta pagina"); window.location.href="../index.php";  </script>';
-    }
-} else {
-    echo '<script> alert("Debe Iniciar Sesion"); window.location.href="../index.php";  </script>';
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,23 +6,14 @@ if (isset($_SESSION['rol'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="../CSS/estilos1.css">
-    <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
-    <link rel="stylesheet" href="../CSS/body.css">
-    <link rel="stylesheet" href="../CSS/nav.css">
 
     <title>Administración</title>
 </head>
 
 <body>
     <header>
-        <?php
-        include_once 'navVistas.php';
-        ?>
-
         <div class="contenedor1">
             <div class="img">
                 <img class="logo" src="../Img/logoIgeia.png" alt="" width="100" height="100">
@@ -87,7 +66,7 @@ if (isset($_SESSION['rol'])) {
                         <p>Citas</p>
                     </div>
                     <div class="btns">
-                        <button class="btns-admin-crud" onclick="window.location.href='adminCitas.php'">Administrar</button>
+                        <button class="btns-admin-crud" onclick="window.location.href='#'">Administrar</button>
 
                     </div>
                 </div>
@@ -102,7 +81,7 @@ if (isset($_SESSION['rol'])) {
                         <p>Consultorios</p>
                     </div>
                     <div class="btns">
-                        <button class="btns-admin-crud" onclick="window.location.href='adminConsultorio.php'">Administrar</button>
+                        <button class="btns-admin-crud" onclick="window.location.href='#'">Administrar</button>
 
                     </div>
                 </div>
@@ -116,7 +95,7 @@ if (isset($_SESSION['rol'])) {
                         <p>Especialidades</p>
                     </div>
                     <div class="btns">
-                        <button class="btns-admin-crud" onclick="window.location.href='adminEspecialidades.php'">Administrar</button>
+                        <button class="btns-admin-crud" onclick="window.location.href='#'">Administrar</button>
                     </div>
                 </div>
             </div>
@@ -124,18 +103,10 @@ if (isset($_SESSION['rol'])) {
     </section>
 
 
-
-
-
-
-
     <!-- footer terminado -->
     <?php
     include_once 'footer.php';
     ?>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

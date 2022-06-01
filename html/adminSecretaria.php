@@ -1,15 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['rol'])) {
-    if ($_SESSION['rol'] == 1 || $_SESSION['rol'] == 3 || $_SESSION['rol'] == 4) {
-        echo '<script> alert("No tiene permiso para usar esta pagina"); window.location.href="../index.php";  </script>';
-    }
-} else {
-    echo '<script> alert("Debe Iniciar Sesion"); window.location.href="../index.php";  </script>';
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,23 +7,14 @@ if (isset($_SESSION['rol'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración Secretaria</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="../CSS/estilos1.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
-    <link rel="stylesheet" href="../CSS/botonesAdministracion.css">
-    <link rel="stylesheet" href="../CSS/buttons.css">
-    <link rel="stylesheet" href="../CSS/body.css">
-    <link rel="stylesheet" href="../CSS/nav.css">
 
 </head>
 
 <body>
 
     <header>
-        <?php
-        include_once 'navVistas.php';
-        ?>
         <div class="contenedor1">
             <div class="img">
                 <img src="../Img/logoIgeia.png" alt="" width="100" height="100">
@@ -55,7 +34,7 @@ if (isset($_SESSION['rol'])) {
             <div class="busqueda">
                 <input type="text" id="NomSecretaria" name="NomSecretaria" placeholder="Secre" class="nombreDoctor">
                 <input type="submit" name="BNDoctor" placeholder="Ibarra" class="btns-admin-crud"> <br>
-                <button class="btns-admin-crud" onclick="this.form.action='nuevaSecretaria.php'; this.form.submit();">Agregar nuevo</button>
+                <button class="btns-admin-crud" onclick="this.form.action='#'; this.form.submit();">Agregar nuevo</button>
             </div>
         </form>
         <?php
@@ -79,8 +58,8 @@ if (isset($_SESSION['rol'])) {
                                             echo '<img src="data:image/jpeg;base64,' . base64_encode(stripslashes($row["foto_ses"])) . '"/>'; ?>
                                         </div>
                                         <div class="btns">
-                                            <button class="btns-admin-crud" onclick="this.form.action='modificarSecretaria.php';this.form.submit();">Editar información</button>
-                                            <button class="btns-admin-crud" onclick="this.form.action='../PHP/eliminarSecretaria.php';this.form.submit();">Eliminar Registro</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Editar información</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Eliminar Registro</button>
                                         </div>
                                     </div>
 
@@ -147,8 +126,8 @@ if (isset($_SESSION['rol'])) {
                                             echo '<img src="data:image/jpeg;base64,' . base64_encode(stripslashes($row["foto_ses"])) . '"/>'; ?>
                                         </div>
                                         <div class="btns">
-                                            <button class="btns-admin-crud" onclick="this.form.action='modificarSecretaria.php';this.form.submit();">Editar información</button>
-                                            <button class="btns-admin-crud" onclick="this.form.action='../PHP/eliminarSecretaria.php';this.form.submit();">Eliminar Registro</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Editar información</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Eliminar Registro</button>
                                         </div>
                                     </div>
 
@@ -205,9 +184,6 @@ if (isset($_SESSION['rol'])) {
     <?php
     include_once 'footer.php';
     ?>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
 </body>
