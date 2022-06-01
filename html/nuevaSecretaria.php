@@ -1,7 +1,7 @@
 <?php
-    include_once '../PHP/database.php';
-    $db = new DB();
+include_once '../PHP/database.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,30 +9,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Secretaria Igeia</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="../CSS/estilos1.css">
-    <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/body.css">
-    <link rel="stylesheet" href="../CSS/nav.css">
 
 
-    <title>Modificar Doctor</title>
+
 </head>
 
 <body>
+
+
     <header>
-        <?php
-        include_once 'navVistas.php';
-        ?>
         <div class="contenedor1">
             <div class="img">
                 <img src="../Img/logoIgeia.png" alt="" width="100" height="100">
             </div>
             <div class="textos">
-                <h3 class="txt">Modificar Doctor</h3>
+                <h3 class="txt">Nueva Secretaria</h3>
             </div>
             <div class="vacio"></div>
         </div>
@@ -41,25 +38,24 @@
     <section class="main">
         <section class="form-login">
             <div class="login">
-                <form action="" method="post" class="signin-form">
+                <form action="../PHP/nuevaSecretaria.php" method="post" enctype="multipart/form-data">
                     <div class="datos">
-
-                        <div class="">
-                            <input type="hidden" name="id" value="<?php echo $_POST['id'] ?>">
+                        <div>
                             <input class="input" type="text" placeholder="Nombre" name="Nombre">
                         </div>
-                        <div class="">
-                            <input class="input" type="text" placeholder="Apellidos" name="Apellidos">
-                        </div>
-                        <div class="">
-                            <input class="input" type="tel" placeholder="Telefono" name="Telefono">
+                        <div class="button">
+                            <input class="input-file" name="Foto" type="file">
                         </div>
                         <div>
+                            <input class="input" type="tel" placeholder="Telefono" name="Telefono">
+                        </div>
+                        <div class="eleccion">
                             <label for="Consultorios">Consultorio</label>
                             <select name="Consultorio">
 
                                 <option selected>Seleccione Consultorio</option>
                                 <?php
+                                $db = new DB();
 
                                 $base = $db->connect()->prepare('SELECT id_cos, consultorios_cos FROM consultorios');
 
@@ -76,8 +72,9 @@
                                 ?>
 
                             </select>
+
                         </div>
-                        <div>
+                        <div class="eleccion"> 
                             <label for="Turnos">Turnos</label>
                             <select name="Turno">
 
@@ -101,16 +98,27 @@
 
                             </select>
                         </div>
-                        <div class="">
-                            <input class="input" type="text" placeholder="Informacion" name="Informacion">
+
+                    </div>
+                    <div class="datos">
+                        <div>
+                            <input class="input" type="email" placeholder="Correo" name="Correo">
+                        </div>
+                        <div>
+                            <input class="input" type="text" placeholder="Apellidos" name="Apellidos">
                         </div>
 
-                    </div>
-                    <div class="btns">
-                        <button class="button" onclick="this.form.action='../PHP/modificarDoctor.php'; this.form.submit();">Guardar</button>
-                        <button class="button" onclick="this.form.action='adminDoctores.php'; this.form.submit();">Cancelar</button>
+                        <div>
+                            <input class="input inputdate" type="date" name="Fecha">
+                        </div>
+
+
                     </div>
 
+                    <div class="btns">
+                        <button class="button" onclick="this.form.action='../PHP/nuevaSecretaria.php'; this.form.submit();">Guardar</button>
+                        <button class="button" onclick="this.form.action='adminSecretaria.php'; this.form.submit();">Cancelar</button>
+                    </div>
 
                 </form>
             </div>
@@ -119,8 +127,10 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <?php
+    include_once 'footer.php';
+    ?>
 
 
 </body>

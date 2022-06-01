@@ -1,3 +1,8 @@
+<?php
+    include_once '../PHP/database.php';
+    $db = new DB();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +14,9 @@
 
     <link rel="stylesheet" href="../CSS/estilos1.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
+    <link rel="stylesheet" href="../CSS/botonesAdministracion.css">
+    <link rel="stylesheet" href="../CSS/buttons.css">
+    <link rel="stylesheet" href="../CSS/body.css">
 
 </head>
 
@@ -34,7 +42,7 @@
             <div class="busqueda">
                 <input type="text" id="NomSecretaria" name="NomSecretaria" placeholder="Secre" class="nombreDoctor">
                 <input type="submit" name="BNDoctor" placeholder="Ibarra" class="btns-admin-crud"> <br>
-                <button class="btns-admin-crud" onclick="this.form.action='#'; this.form.submit();">Agregar nuevo</button>
+                <button class="btns-admin-crud" onclick="this.form.action='nuevaSecretaria.php'; this.form.submit();">Agregar nuevo</button>
             </div>
         </form>
         <?php
