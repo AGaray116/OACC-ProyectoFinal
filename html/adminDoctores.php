@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="../CSS/estilos1.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
+    <link rel="stylesheet" href="../CSS/botonesAdministracion.css">
+
 </head>
 
 <body>
@@ -57,8 +59,8 @@
                                             echo '<img src="data:image/jpeg;base64,' . base64_encode(stripslashes($row["foto_dos"])) . '"/>'; ?>
                                         </div>
                                         <div class="btns">
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Editar información</button>
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Eliminar Registro</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='modificarDoctor.php';this.form.submit();">Editar información</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='../PHP/eliminarDoctor.php';this.form.submit();">Eliminar Registro</button>
                                         </div>
                                     </div>
 
@@ -139,8 +141,8 @@
                                             echo '<img src="data:image/jpeg;base64,' . base64_encode(stripslashes($row["foto_dos"])) . '"/>'; ?>
                                         </div>
                                         <div class="btns">
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Editar información</button>
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Eliminar Registro</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='modificarDoctor.php';this.form.submit();">Editar información</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='../PHP/eliminarDoctor.php';this.form.submit();">Eliminar Registro</button>
                                         </div>
                                     </div>
 

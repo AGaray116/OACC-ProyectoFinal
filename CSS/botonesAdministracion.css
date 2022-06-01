@@ -1,0 +1,32 @@
+/* Diseño Boton Index, NewUser, Login*/
+.btns-admin-crud{
+    color: #60C185;
+    background: transparent;
+    border: 2px solid #60C185;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    /* padding: 16px 32px; */
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 150px;
+    height: 30px;
+}
+
+.btns-admin-crud {
+    background-color: white;
+    color: black;
+    border: 2px solid #60C185;
+}
+
+
+.btns-admin-crud:hover{
+    background-color: #60C185;
+    color: white;
+}
