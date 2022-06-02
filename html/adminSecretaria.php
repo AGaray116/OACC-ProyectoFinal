@@ -66,8 +66,8 @@
                                             echo '<img src="data:image/jpeg;base64,' . base64_encode(stripslashes($row["foto_ses"])) . '"/>'; ?>
                                         </div>
                                         <div class="btns">
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Editar información</button>
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Eliminar Registro</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='modificarSecretaria.php';this.form.submit();">Editar información</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='../PHP/eliminarSecretaria.php';this.form.submit();">Eliminar Registro</button>
                                         </div>
                                     </div>
 
@@ -134,8 +134,8 @@
                                             echo '<img src="data:image/jpeg;base64,' . base64_encode(stripslashes($row["foto_ses"])) . '"/>'; ?>
                                         </div>
                                         <div class="btns">
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Editar información</button>
-                                            <button class="btns-admin-crud" onclick="this.form.action='#';this.form.submit();">Eliminar Registro</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='modificarSecretaria.php';this.form.submit();">Editar información</button>
+                                            <button class="btns-admin-crud" onclick="this.form.action='../PHP/eliminarSecretaria.php';this.form.submit();">Eliminar Registro</button>
                                         </div>
                                     </div>
 
