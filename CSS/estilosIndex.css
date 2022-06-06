@@ -1,0 +1,253 @@
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: square;
+  }
+  
+  ul li {
+    line-height: 1.5;
+  }
+  
+/* NAV */
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+
+/* Header */
+
+header {
+    width: 100%;
+    background: url('../Img/gloves-g02aaa1fa2_640.png') #60C185;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+.imgbutton{
+    border-radius:50% ;
+}
+
+header .textos {
+    width: 100%;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+header .textos .nombre {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header .textos .nombre span {
+    font-weight: 300;
+
+}
+
+header .textos h3 {
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+/* Main */
+
+
+.main .nosotros .contenedor {
+    overflow: visible;
+    position: relative;
+}
+
+.main .nosotros .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.main .nosotros .foto img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .nosotros article {
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    float: right;
+    /*top: 30px;*/
+    top: 400px;
+    /*Con Parallax*/
+    z-index: 1;
+    width: 270px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.main .nosotros article h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .nosotros article p {
+    line-height: 28px;
+    margin-bottom: 10px;
+
+}
+
+.main .directorio {
+    padding-top: 570px;
+    margin-bottom: 50px;
+    
+}
+
+.main .directorio .contenedor-directorio .titulo-directorio {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+    height: 70px;
+    background: #60C185;
+    margin-top: 15px;
+}
+
+.main .directorio .contenedor-directorio {
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+
+/* Input Doctor */
+
+.main .directorio .contenedor-directorio .nombreDoctor {
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    font-size: 2rem;
+    color: #60C185;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.main .directorio .contenedor-directorio .nombreDoctor:placeholder {
+    color: #60C185;
+    /**/
+}
+
+.main .directorio .contenedor-directorio .nombreDoctor:placeholder-shown~.nombreDoctor2 {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.main .directorio .contenedor-directorio .nombreDoctor2 {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: blueviolet;
+}
+
+.main .directorio .contenedor-directorio .nombreDoctor:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+.main .directorio .contenedor-directorio .nombreDoctor:focus~.nombreDoctor2 {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+.main .directorio .contenedor-directorio .nombreDoctor:required,
+.main .directorio .contenedor-directorio .nombreDoctor2:invalid {
+    box-shadow: none;
+}
+
+.main .directorio .contenedor-directorio .busqueda {
+    display: block;
+    text-align: center;
+}
+
+/* botones pagina */
+
+.main .directorio .contenedor-directorio .btns {
+    display: block;
+    text-align: center;
+}
+
+.main .directorio .contenedor-directorio .btn3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.main .masInfo .contenido1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nose{
+    display: flex;
+    width: 500px;
+    align-items: flex-start;
+
+}
+
+.nose2{
+    padding-top: 40px;
+}
+

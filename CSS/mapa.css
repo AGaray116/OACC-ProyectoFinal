@@ -1,0 +1,52 @@
+.main .Ubicacion {
+    background: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.Ubicacion .titulo {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.Ubicacion .direccion {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.Ubicacion .direccion .calle {
+    margin-bottom: 15px;
+}
+
+.Ubicacion .horarios {
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+.Ubicacion .horarios .entre-semana,
+.Ubicacion .horarios .fin-semana {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.Ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}

@@ -1,0 +1,52 @@
+.nose{
+    display: flex;
+    width: 300px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right: 55px;
+}
+
+
+ul {
+    list-style-type: square;
+  }
+  
+  ul li {
+    line-height: 1.5;
+  }
+  
+/* NAV */
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu{
+    background-color:#60C185;
+}
+
+.txtNav{
+    font-size: x-large;
+    color: black;
+}
+
+
+.txtNav:hover{
+    color: #fff;
+}
+
+.nose2{
+    padding-top: 5px;
+}
+
+.contenedor1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vacio{
+    width: 100px;
+    height: 100px;
+}
