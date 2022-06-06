@@ -24,9 +24,6 @@
 
 <body>
     <header>
-        <?php
-        include_once 'navVistas.php';
-        ?>
         <div class="contenedor1">
             <div class="img">
                 <img src="../Img/logoIgeia.png" alt="" width="100" height="100">

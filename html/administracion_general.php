@@ -68,7 +68,7 @@
                         <p>Citas</p>
                     </div>
                     <div class="btns">
-                        <button class="btns-admin-crud" onclick="window.location.href='#'">Administrar</button>
+                        <button class="btns-admin-crud" onclick="window.location.href='adminCitas.php'">Administrar</button>
 
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <p>Consultorios</p>
                     </div>
                     <div class="btns">
-                        <button class="btns-admin-crud" onclick="window.location.href='#'">Administrar</button>
+                        <button class="btns-admin-crud" onclick="window.location.href='adminConsultorio.php'">Administrar</button>
 
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                         <p>Especialidades</p>
                     </div>
                     <div class="btns">
-                        <button class="btns-admin-crud" onclick="window.location.href='#'">Administrar</button>
+                        <button class="btns-admin-crud" onclick="window.location.href='adminEspecialidades.php'">Administrar</button>
                     </div>
                 </div>
             </div>
