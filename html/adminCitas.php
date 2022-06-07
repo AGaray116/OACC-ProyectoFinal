@@ -1,6 +1,5 @@
 <?php
-session_start();
-
+require "../PHP/database.php"
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +48,7 @@ session_start();
         <?php
         if (isset($_POST['NomDoctor'])) {
             $nombre = $_POST['NomDoctor'];
+            $db = new DB();
             $base = $db->connect()->prepare('CALL buscarDoctorCitas(:nombre)');
             $base->execute(['nombre' => $nombre]);
             $num = $base->rowCount();
@@ -119,6 +119,7 @@ session_start();
                 echo '<script> alert("El doctor buscado no existe"); window.location.href="../html/adminCitas.php";  </script>';
             }
         } else {
+            $db = new DB();
             $base = $db->connect()->prepare('SELECT b.nombre_dos, b.apellido_dos, d.especialidad_ess, c.consultorios_cos, a.fecha_cts, e.horas_hcs, f.nombre_pas, f.apellido_pas FROM citas a INNER JOIN doctores b ON a.id_dos_cts = b.id_dos INNER JOIN consultorios c ON b.id_cos_dos = c.id_cos INNER JOIN especialidades d ON b.id_ess_dos = d.id_ess INNER JOIN horarios_citas e ON a.id_hcs_cts =e.id_hcs INNER JOIn pacientes f ON a.id_pas_cts = f.id_pas ');
             $base->execute();
             $num = $base->rowCount();
