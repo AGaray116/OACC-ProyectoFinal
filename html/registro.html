@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/estilos1.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/buttons.css">
+    <link rel="stylesheet" href="../CSS/body.css">
+
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor1">
+            <div class="imagen">
+                <img src="" alt="">
+            </div>
+            <div class="textos">
+                <h3 class="txt">Registro</h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <section class="form-login">
+            <div class="login rem">
+                <form action="" method="post" class="signin-form" enctype="multipart/form-data">
+                    <div class="datos">
+                        <div class="button">
+                            <input class="input-file" name="Foto" type="file" required>
+                        </div>
+                        <div class="">
+                            <input class="input2" type="text" placeholder="Nombre" name="Nombre" required>
+                        </div>
+                        <div class="">
+                            <input class="input2" type="tel" placeholder="Telefono" name="Telefono" required>
+                        </div>
+                        <div class="">
+                            <input class="input2" type="email" placeholder="Correo" name="Correo" required>
+                        </div>
+                        <div class="">
+                            <input class="input2" type="password" placeholder="Contraseña" name="Contrasena" required>
+                        </div>
+
+                    </div>
+
+                    <div class="datos">
+                        <div class="">
+                            <input class="input2" type="text" placeholder="Apellidos" name="Apellidos" required>
+                        </div>
+                        <div class="">
+                            <input class="input2 inputdate1" type="date" name="Fecha" required>
+                        </div>
+                        <div class="">
+                            <input class="input2" type="password" placeholder="Confirmar Contraseña" name="Confirmar" required>
+                        </div>
+
+                    </div>
+                    <div class="btns">
+                        <a class="button" href="../index.php">Cancelar</a>
+                        <button class="button" onclick="this.form.action='../PHP/registro.php'; this.form.submit();">Registrar</button>
+                    </div>
+
+                    <a class="a" href="iniciarSesion.html">¿Ya tiene una cuenta?</a>
+
+                </form>
+            </div>
+        </section>
+    </section>
+
+
+
+</body>
+
+</html>
