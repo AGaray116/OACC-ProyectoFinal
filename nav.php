@@ -7,6 +7,7 @@
            
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php echo "Administración" ?><span class="caret"></span></button>
                 <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="html/registro.html">Registrarse</a>
                     <a class="dropdown-item" href="html/administracion_general.php">Panel de Administración</a>    
                 </ul>
         </div>
