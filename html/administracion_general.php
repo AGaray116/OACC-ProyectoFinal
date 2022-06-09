@@ -15,6 +15,7 @@ session_start();
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
     <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
 
     <title>Administración</title>
 </head>

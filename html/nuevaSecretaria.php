@@ -18,6 +18,7 @@ include_once '../PHP/database.php';
     <link rel="stylesheet" href="../CSS/estilos1.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
 
 
 

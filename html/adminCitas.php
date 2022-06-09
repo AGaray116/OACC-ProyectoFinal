@@ -20,6 +20,7 @@ $db = new DB();
     <link rel="stylesheet" href="../CSS/botonesAdministracion.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/body.css">
+     <link rel="stylesheet" href="../CSS/nav.css">
 
 </head>
 

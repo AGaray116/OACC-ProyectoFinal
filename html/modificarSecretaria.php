@@ -16,6 +16,7 @@ include_once '../PHP/database.php'
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
 
     <title>Modificar Secretaria</title>
 </head>
