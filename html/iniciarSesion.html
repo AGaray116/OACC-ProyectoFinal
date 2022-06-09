@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/estilos1.css">
+    <link rel="stylesheet" href="../CSS/buttons.css">
+
+    <title>Igeia</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor1">
+            <div class="imagen">
+
+            </div>
+            <div class="textos">
+                <h3 class="txt">Iniciar Sesión</h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <section class="form-login">
+            <div class="login">
+                <form  action="../PHP/newSesion.php" method ="post" class="signin-form">
+                    <div class="user">
+                        <input name="correo" type="email" class="input2" placeholder="Correo" required>
+                    </div>
+
+                    <div class="password">
+                        <input name="contrasena" type="password" class="input2" placeholder="Password" required>
+                    </div>
+
+                    <div class="btns">
+                        <div class="button-iniciar-sesion">
+                            <button type="submit" class="iniciar-sesion">Iniciar Sesión</button>
+                        </div>
+
+                        <div class="button-contrasena">
+                            <!-- <a href="#" class="contrasena a">Olvide Mi Contraseña</a> -->
+                        </div>
+
+                        <div class="registro">
+                            <a href="registro.html" class="registro a">¿No Esta Registrado?</a>
+                        </div>
+                    </div>
+                </div>
+            </form>    
+        </section>
+
+    </section>
+
+    
+
+</body>
+
+</html>
