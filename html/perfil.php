@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +19,7 @@
 
     <header>
         <?php
-        include_once 'navVistas.php';
+        include_once '../nav.php';
         ?>
         <div class="contenedor1">
             <div class="img">
