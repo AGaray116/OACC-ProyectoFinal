@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once '../PHP/database.php';
 $db = new DB();
 ?>
@@ -12,6 +13,7 @@ $db = new DB();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración Citas</title>
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="../CSS/estilos1.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
@@ -24,7 +26,9 @@ $db = new DB();
 <body>
 
     <header>
-        
+        <?php
+        include_once 'navVistas.php';
+        ?>
         <div class="contenedor1">
             <div class="img">
                 <img src="../Img/logoIgeia.png" alt="" width="100" height="100">
@@ -192,7 +196,9 @@ $db = new DB();
     include_once 'footer.php';
     ?>
 
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 
 </body>
 
