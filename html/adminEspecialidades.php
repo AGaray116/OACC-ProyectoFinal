@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once '../PHP/database.php';
 ?>
 
@@ -12,23 +11,18 @@ include_once '../PHP/database.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración Especialidad</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="../CSS/estilos1.css">
     <link rel="stylesheet" href="../CSS/estilosCardsAdministrar.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <link rel="stylesheet" href="../CSS/body.css">
-    <link rel="stylesheet" href="../CSS/nav.css">
 
 </head>
 
 <body>
 
     <header>
-        <?php
-        include_once 'navVistas.php';
-        ?>
-
+      
         <div class="contenedor1">
             <div class="img">
                 <img src="../Img/logoIgeia.png" alt="" width="100" height="100">
@@ -103,8 +97,6 @@ include_once '../PHP/database.php';
     include_once 'footer.php';
     ?>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 
