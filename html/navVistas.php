@@ -1,10 +1,9 @@
 <nav class="menu">
     <div class="nose">
-        <a href="#" id="btn-nosotros">Nosotros</a>
-        <a href="#" id="btn-directorio">Directorio</a>
-        <a href="#" id="btn-ubicacion">Ubicacion</a>
+        <a href="../index.php" id="btn-nosotros" class="txtNav">Inicio</a>
         <div class="dropdown nose2" id="nose2">
-            <?php require 'PHP/database.php';
+            <?php require '../PHP/database.php';
+           
             $comprobar = isset($_SESSION['rol']) && $_SESSION['user'];
             error_reporting(0);
             if ($comprobar == "True") {
@@ -51,27 +50,39 @@
                     <?php
                     if ($_SESSION['rol'] == 1) {
                     ?>
-                        <a class="dropdown-item" href="html/perfil.php">Perfil</a
-                        <a class="dropdown-item" href="PHP/cerrar_sesion.php">Cerrar Sesión</a>
+                        <div>
+                            <a class="dropdown-item" href="perfil.php">Perfil</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item" href="../PHP/cerrar_sesion.php">Cerrar Sesión</a>
+                        </div>
                     <?php
                     }
                     if ($_SESSION['rol'] == 2) {
-                    ?>
-                        <a class="dropdown-item" href="html/perfil.php">Perfil</a>
-                        <a class="dropdown-item" href="html/administracion_general.php">Panel de Administración</a>
-                        <a class="dropdown-item" href="PHP/cerrar_sesion.php">Cerrar Sesión</a>
+                    ?>  
+                        <div>
+                        <a class="dropdown-item" href="perfil.php">Perfil</a>
+                        </div>
+                        <div>
+                        <a class="dropdown-item" href="administracion_general.php">Panel de Administración</a>
+                        </div>
+                        <div>
+                        <a class="dropdown-item" href="../PHP/cerrar_sesion.php">Cerrar Sesión</a>
+                        </div>
                     <?php
                     }
                     if ($_SESSION['rol'] == 3) {
                     ?>
-                        <a class="dropdown-item" href="html/perfil.php">Perfil</a>
-                        <a class="dropdown-item" href="PHP/cerrar_sesion.php">Cerrar Sesión</a>
+                        <div>
+                        <a class="dropdown-item" href="perfil.php">Perfil</a>
+                        </div>
+                        <div><a class="dropdown-item" href="../PHP/cerrar_sesion.php">Cerrar Sesión</a></div>
                     <?php
                     }
                     if ($_SESSION['rol'] == 4) {
                     ?>
-                        <a class="dropdown-item" href="html/perfil.php">Perfil</a>
-                        <a class="dropdown-item" href="PHP/cerrar_sesion.php">Cerrar Sesión</a>
+                        <div><a class="dropdown-item" href="perfil.php">Perfil</a></div>
+                        <div><a class="dropdown-item" href="../PHP/cerrar_sesion.php">Cerrar Sesión</a></div>
                     <?php
                     }
                 } else {
