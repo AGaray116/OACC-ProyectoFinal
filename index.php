@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,13 @@
     <link rel="stylesheet" href="CSS/buttons.css">
     <link rel="stylesheet" href="CSS/buttonDesplegable.css">
     <link rel="stylesheet" href="CSS/mapa.css">
+
+    
+    <script src="JS/jquery-1.12.3.min.js"></script>
+    <script src="JS/efectos.js"></script>
+    <script src="JS/parallax.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
 
 </head>
 

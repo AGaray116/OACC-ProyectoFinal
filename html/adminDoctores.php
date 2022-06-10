@@ -1,7 +1,6 @@
 <?php
 session_start();
-include_once '../PHP/database.php';
-$db = new DB();
+
 ?>
 
 <!DOCTYPE html>

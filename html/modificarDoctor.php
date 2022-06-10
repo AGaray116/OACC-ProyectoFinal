@@ -1,7 +1,6 @@
 <?php
 session_start();
-include_once '../PHP/database.php';
-$db = new DB();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -118,7 +117,9 @@ $db = new DB();
         </section>
     </section>
 
-
+    <?php
+    include_once 'footer.php';
+    ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

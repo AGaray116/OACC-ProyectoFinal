@@ -5,6 +5,8 @@
         <a href="#" id="btn-ubicacion">Ubicacion</a>
         <div class="dropdown nose2" id="nose2">
             <?php require 'PHP/database.php';
+
+            
             $comprobar = isset($_SESSION['rol']) && $_SESSION['user'];
             error_reporting(0);
             if ($comprobar == "True") {
