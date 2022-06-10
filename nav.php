@@ -5,13 +5,22 @@
         <a href="#" id="btn-ubicacion">Ubicacion</a>
         <div class="dropdown nose2" id="nose2">
             <?php require 'PHP/database.php';
-
-            
+           
             $comprobar = isset($_SESSION['rol']) && $_SESSION['user'];
             error_reporting(0);
             if ($comprobar == "True") {
-                $correo = $_SESSION['user'];
+                $correo = "admin@admin.com";
                 $db = new DB();
+                $query = $db->connect()->prepare('SELECT * FROM usuarios WHERE correo_uss = :correo');
+                $query->execute(['correo' => $correo]);
+            
+                $row = $query -> fetch(PDO::FETCH_NUM);
+                
+                $rol = $row[1];
+                $correo = $row[2];
+                $_SESSION['rol'] = $rol;
+                $_SESSION['user'] = $correo;
+                
                 if ($_SESSION['rol'] == 1) {
                     $query = $db->connect()->prepare('SELECT nombre_dos, apellido_dos FROM doctores WHERE correo_dos = :correo');
                     $query->execute(['correo' => $correo]);
