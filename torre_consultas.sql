@@ -52,6 +52,7 @@ apellido_dos              VARCHAR (25) NOT NULL,
 foto_dos                  BLOB,
 correo_dos                VARCHAR(60) NOT NULL,
 fechaNacimiento_dos       DATE NOT NULL,
+informacionRelevante_dos  VARCHAR (100) NOT NULL,
 telefono_dos              CHAR (10) NOT NULL,
 FOREIGN KEY (id_uss_dos) REFERENCES usuarios(id_uss), 
 FOREIGN KEY (id_tur_dos) REFERENCES turnos(id_tur),
@@ -201,6 +202,7 @@ FOREIGN KEY (id_dos_cts) REFERENCES doctores(id_dos),
 FOREIGN KEY (id_pas_cts) REFERENCES pacientes(id_pas)
 )DEFAULT CHARACTER SET utf8;
 
+
 DELIMITER //
 CREATE TRIGGER citas_before_insert
 BEFORE INSERT
@@ -327,8 +329,8 @@ INSERT INTO usuarios (id_tus_uss, correo_uss, contrasena_uss) VALUES (3,'secre1@
 INSERT INTO usuarios (id_tus_uss, correo_uss, contrasena_uss) VALUES (4,'paciente@paciente.com','paciente');
 INSERT INTO usuarios (id_tus_uss, correo_uss, contrasena_uss) VALUES (4,'paciente1@paciente.com','paciente1');
 
-INSERT INTO doctores (id_uss_dos, id_tur_dos, id_cos_dos, id_ess_dos, nombre_dos, apellido_dos, foto_dos,  correo_dos, fechaNacimiento_dos, telefono_dos) VALUES (1,1,1,4,"Doc","Tor",NULL,"doctor@doctor.com", "1999-02-29", "5546382917");
-INSERT INTO doctores (id_uss_dos, id_tur_dos, id_cos_dos, id_ess_dos, nombre_dos, apellido_dos, foto_dos,  correo_dos, fechaNacimiento_dos, telefono_dos) VALUES (1,2,10,4,"Doc","Tor",NULL,"doctor1@doctor.com", "1999-04-29", "5546383491");
+INSERT INTO doctores (id_uss_dos, id_tur_dos, id_cos_dos, id_ess_dos, nombre_dos, apellido_dos, foto_dos,  correo_dos, fechaNacimiento_dos, telefono_dos, informacionRelevante_dos) VALUES (1,1,1,4,"Doc","Tor",NULL,"doctor@doctor.com", "1999-02-29", "5546382917", "Cedula:135790");
+INSERT INTO doctores (id_uss_dos, id_tur_dos, id_cos_dos, id_ess_dos, nombre_dos, apellido_dos, foto_dos,  correo_dos, fechaNacimiento_dos, telefono_dos, informacionRelevante_dos) VALUES (1,2,10,4,"Doc","Tor",NULL,"doctor1@doctor.com", "1999-04-29", "5546383491", "Cedula:123456");
 
 INSERT INTO administradores (id_uss_ads, nombre_ads, apellido_ads, fechaNacimiento_ads, telefono_ads, correo_ads) VALUES (1,"Admin", "Istrador", "1990-09-18", "5536487762", "admin@admin.com");
 INSERT INTO administradores (id_uss_ads, nombre_ads, apellido_ads, fechaNacimiento_ads, telefono_ads, correo_ads) VALUES (1,"Admin1", "Istrador1", "1989-07-07", "5519297762", "admin1@admin.com");
@@ -338,3 +340,6 @@ INSERT INTO secretarias (id_uss_ses, id_cos_ses, id_tur_ses, nombre_ses, apellid
 
 INSERT INTO pacientes (id_uss_pas, nombre_pas, apellido_pas, foto_pas, fechaNacimiento_pas, telefono_pas, correo_pas) VALUES (1, "Paci", "Ente", NULL, "1985-01-06", "5513696996", "paciente@paciente.com");
 INSERT INTO pacientes (id_uss_pas, nombre_pas, apellido_pas, foto_pas, fechaNacimiento_pas, telefono_pas, correo_pas) VALUES (1, "Paci1", "Ente1", NULL, "2005-07-07", "5596696996", "paciente1@paciente.com");
+
+INSERT INTO citas (id_hcs_cts, id_dos_cts, id_pas_cts, fecha_cts) VALUES (1,1,1,"2022-10-10");
+INSERT INTO citas (id_hcs_cts, id_dos_cts, id_pas_cts, fecha_cts) VALUES (5,1,1,"2022-11-11");
